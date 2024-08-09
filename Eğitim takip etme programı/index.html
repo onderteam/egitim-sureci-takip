@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Süreci Takip</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Harici stil dosyasını bağlar -->
+</head>
+<body>
+    <div class="container">
+        <button id="darkModeToggle" class="dark-mode-toggle">Gece Modu</button> <!-- Gece modu düğmesi -->
+        <h1>Eğitim Süreci Takip</h1>
+        <form id="trainingForm"> <!-- Eğitim verisi formu -->
+            <input type="text" id="date" placeholder="dd.mm.yyyy" required>
+            <input type="text" id="module" placeholder="Konu / Modül" required>
+            <input type="text" id="topics" placeholder="Öğrenilen Konular / Notlar" required>
+            <input type="number" id="practiceTime" placeholder="Pratik Süresi (saat)" required>
+            <input type="text" id="progress" placeholder="İlerleme / Değerlendirme" required>
+            <input type="text" id="resources" placeholder="Kullanılan Kaynaklar / Notlar" required>
+            <input type="text" id="projects" placeholder="Projeler / Egzersizler" required>
+            <select id="importanceLevel" required>
+                <option value="Normal">Normal</option>
+                <option value="Orta Derece">Orta Derece</option>
+                <option value="Önemli">Önemli</option>
+            </select>
+            <button type="submit">Ekle</button>
+        </form>
+        <table id="trainingTable">
+            <thead>
+                <tr>
+                    <th>Tarih</th>
+                    <th>Konu / Modül</th>
+                    <th>Öğrenilen Konular</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dinamik olarak JavaScript ile doldurulacak -->
+            </tbody>
+        </table>
+        <button id="viewDataBtn">Verileri Görüntüle</button> <!-- Verileri görüntüleme düğmesi -->
+    </div>
+    <script src="script.js"></script> <!-- Harici JavaScript dosyasını bağlar -->
+</body>
+</html>

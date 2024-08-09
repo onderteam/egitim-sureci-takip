@@ -1,0 +1,153 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Tooltip Stil Ayarları */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -125px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Gece Modu Renk Ayarları */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .tooltip .tooltiptext {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode th,
+.dark-mode td {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* İşlemler bölümü düğmeleri */
+.actions button {
+    margin-right: 5px;
+}
+
+/* Önem seviyesi düğmeleri */
+.importance-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.importance-options button.important {
+    background-color: red;
+    color: white;
+}
+
+.importance-options button.less-important {
+    background-color: yellow;
+    color: black;
+}
+
+.importance-options button.normal {
+    background-color: green;
+    color: white;
+}
